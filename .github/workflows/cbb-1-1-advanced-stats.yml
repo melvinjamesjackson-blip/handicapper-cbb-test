@@ -1,0 +1,45 @@
+name: CBB 1.1 Automated Advanced Stats (Test Only)
+on:
+  workflow_dispatch:
+    inputs:
+      start_date:
+        description: 'Season start in Eastern Time (YYYY-MM-DD)'
+        required: true
+        default: '2026-11-01'
+      end_date:
+        description: 'Last date YYYY-MM-DD (leave blank for today)'
+        required: false
+        default: ''
+      max_games:
+        description: '0 = all games; 20 = quick test'
+        required: true
+        default: '20'
+  schedule:
+    - cron: '35 11 * * *'
+permissions:
+  contents: read
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect season game results and advanced metrics
+        env:
+          START: ${{ inputs.start_date || '2026-11-01' }}
+          END: ${{ inputs.end_date || '' }}
+          MAX_GAMES: ${{ inputs.max_games || '0' }}
+        run: |
+          args=(--start "$START" --max-games "$MAX_GAMES" --out generated/cbb_1_1)
+          if [ -n "$END" ]; then args+=(--end "$END"); fi
+          python scripts/cbb_1_1.py "${args[@]}"
+      - name: Upload report (no commits, no website deploy)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-1-1-advanced-stat-report
+          path: generated/cbb_1_1/
+          if-no-files-found: warn
