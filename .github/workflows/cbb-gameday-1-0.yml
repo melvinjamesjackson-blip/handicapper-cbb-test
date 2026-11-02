@@ -1,0 +1,34 @@
+name: CBB Game-Day 1.0 (Testing Only)
+on:
+  workflow_dispatch:
+    inputs:
+      game_date:
+        description: 'Eastern game date YYYY-MM-DD'
+        required: true
+        default: '2026-11-02'
+  schedule:
+    - cron: '20 12 * * *'
+permissions:
+  contents: read
+jobs:
+  gameday:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch historical baseline and game-day projections
+        env:
+          GAME_DATE: ${{ inputs.game_date || '' }}
+        run: |
+          if [ -z "$GAME_DATE" ]; then GAME_DATE=$(TZ=America/New_York date +%F); fi
+          python scripts/cbb_gameday.py --day "$GAME_DATE" --out generated/cbb_gameday
+      - name: Upload game-day JSON (no website changes)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-gameday-1-0-report
+          path: generated/cbb_gameday/
+          if-no-files-found: warn
