@@ -1,0 +1,82 @@
+name: CBB Game-Day Auto Publish
+on:
+  workflow_dispatch:
+    inputs:
+      game_date:
+        description: 'Eastern game date YYYY-MM-DD (leave empty for today)'
+        required: false
+        default: ''
+  schedule:
+    - cron: '20 12 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cbb-gameday-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Generate game-day JSON
+        env:
+          GAME_DATE: ${{ inputs.game_date || '' }}
+        run: |
+          if [ -z "$GAME_DATE" ]; then GAME_DATE=$(TZ=America/New_York date +%F); fi
+          echo "GAME_DATE=$GAME_DATE" >> "$GITHUB_ENV"
+          python scripts/cbb_gameday.py --day "$GAME_DATE" --out generated/cbb_gameday
+      - name: Validate and stage safe update
+        env:
+          RUN_KIND: ${{ github.event_name }}
+        run: |
+          python - <<'PY'
+          import json, os, pathlib, datetime
+          inp=pathlib.Path('generated/cbb_gameday/cbb_gameday.json')
+          data=json.loads(inp.read_text())
+          day=os.environ['GAME_DATE']
+          assert datetime.date.fromisoformat(day)
+          assert data.get('day')==day, 'Report day does not match requested date'
+          assert isinstance(data.get('games'),list), 'Missing games array'
+          assert data.get('matchups')==len(data['games']), 'Game count mismatch'
+          assert len(data['games'])>0, 'No matchups fetched; do not replace live JSON'
+          assert data.get('prior_final_games',0)>=600, 'Historical baseline unavailable; do not publish'
+          assert data.get('projections_available',0)>0, 'Zero projections; do not replace live JSON'
+          assert sum(bool(g.get('projection_available')) for g in data['games'])==data['projections_available'], 'Projection count mismatch'
+          assert all(g.get('date')==day for g in data['games']), 'Unexpected game date'
+          existing=pathlib.Path('docs/data.json')
+          if existing.exists():
+              try:
+                  old=json.loads(existing.read_text())
+                  old_day=old.get('day','')
+                  if old_day>day:
+                      raise ValueError(f'Refusing to replace newer data {old_day} with {day}')
+              except json.JSONDecodeError:
+                  raise ValueError('Existing docs/data.json is invalid; inspect it before publishing')
+          assert pathlib.Path('docs/index.html').exists(), 'GitHub Pages HTML missing at docs/index.html'
+          existing.write_text(json.dumps(data,indent=2)+'\n')
+          print(f'Staged {day}: {len(data["games"])} matchups, {data["projections_available"]} experimental projections')
+          PY
+      - name: Commit data.json to GitHub Pages branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/data.json
+          if git diff --cached --quiet; then
+            echo 'No changes to publish'
+          else
+            git commit -m "Update CBB game-day projections ${GAME_DATE}"
+            git push
+          fi
+      - name: Upload diagnostics and generated files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-gameday-auto-publish-report
+          path: generated/cbb_gameday/
+          if-no-files-found: warn
