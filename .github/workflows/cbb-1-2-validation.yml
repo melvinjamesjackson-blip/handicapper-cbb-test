@@ -1,0 +1,22 @@
+name: CBB 1.2 Projection Validation (Test Only)
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Validate published projections and betting signs
+        run: python scripts/cbb_1_2_validation.py --input docs/data.json --out generated/cbb_validation
+      - name: Upload audit report even if validation fails
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-1-2-validation-report
+          path: generated/cbb_validation/
+          if-no-files-found: warn
