@@ -1,0 +1,46 @@
+name: CBB 1.3 Boxscore Diagnostic (Test Only)
+on:
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Date of current-season completed games YYYY-MM-DD'
+        required: true
+        default: '2026-11-02'
+        type: string
+      control_date:
+        description: 'Previously completed season date YYYY-MM-DD'
+        required: true
+        default: '2025-11-10'
+        type: string
+      max_games:
+        description: 'Completed games to inspect PER date (1-100)'
+        required: true
+        default: '25'
+        type: string
+permissions:
+  contents: read
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compare current and historical boxscores
+        env:
+          TARGET: ${{ inputs.target_date }}
+          CONTROL: ${{ inputs.control_date }}
+          MAXG: ${{ inputs.max_games }}
+        run: |
+          python scripts/cbb_1_3_boxscore_diagnostic.py \
+            --target-date "$TARGET" --control-date "$CONTROL" \
+            --max-games-per-date "$MAXG" --out generated/cbb_1_3
+      - name: Upload diagnostic artifact (no publishing)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-1-3-boxscore-diagnostic
+          path: generated/cbb_1_3/
+          if-no-files-found: warn
