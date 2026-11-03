@@ -1,0 +1,36 @@
+name: CBB 1.3.2 Test Rebuild
+on:
+  workflow_dispatch:
+    inputs:
+      start:
+        description: First date YYYY-MM-DD
+        required: true
+        default: '2026-11-02'
+      end:
+        description: Last completed date YYYY-MM-DD
+        required: true
+        default: '2026-11-02'
+permissions:
+  contents: read
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect complete boxscores and rebuild test ratings
+        env:
+          START_DATE: ${{ inputs.start }}
+          END_DATE: ${{ inputs.end }}
+        run: python scripts/cbb_1_3_2.py --start "$START_DATE" --end "$END_DATE" --out generated/cbb_1_3_2
+      - name: Upload test outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-1-3-2-test-rebuild
+          path: generated/cbb_1_3_2/
+          if-no-files-found: warn
+          retention-days: 14
