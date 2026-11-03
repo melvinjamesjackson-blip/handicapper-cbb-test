@@ -1,0 +1,46 @@
+name: CBB 1.3.1 ESPN Parser Verify (Test Only)
+on:
+  workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Completed-game test date (YYYY-MM-DD)'
+        required: true
+        default: '2026-11-02'
+        type: string
+      control_date:
+        description: 'Historical comparison date (YYYY-MM-DD)'
+        required: true
+        default: '2025-11-10'
+        type: string
+      max_games:
+        description: 'Maximum completed games PER date'
+        required: true
+        default: '25'
+        type: string
+permissions:
+  contents: read
+jobs:
+  parser_verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify composite statistics parser
+        env:
+          TARGET: ${{ inputs.target_date }}
+          CONTROL: ${{ inputs.control_date }}
+          MAXG: ${{ inputs.max_games }}
+        run: |
+          python scripts/cbb_1_3_1_parser_verify.py \
+            --target-date "$TARGET" --control-date "$CONTROL" \
+            --max-games-per-date "$MAXG" --out generated/cbb_1_3_1
+      - name: Upload verification artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-1-3-1-parser-verification
+          path: generated/cbb_1_3_1/
+          if-no-files-found: error
