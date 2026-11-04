@@ -1,0 +1,45 @@
+name: CBB 1.4 Test Ratings Refresh
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 12 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cbb-1-4-test-refresh
+  cancel-in-progress: false
+jobs:
+  refresh:
+    if: github.repository == 'melvinjamesjackson-blip/handicapper-cbb-test' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect completed games and fit ratings
+        shell: bash
+        run: |
+          end=$(TZ=America/New_York date -d yesterday +%F)
+          if [[ "$end" < 2026-11-02 || "$end" > 2027-04-12 ]]; then
+            echo 'Outside the 2026–27 refresh window.'
+            exit 0
+          fi
+          python scripts/cbb_1_3_2.py --start 2026-11-02 --end "$end" --out generated/cbb_refresh
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          report = json.loads(Path('generated/cbb_refresh/cbb_1_3_2_report.json').read_text())
+          if report['usable_fraction_selected'] < 0.95:
+              raise SystemExit('Under 95% usable boxscores. Previous snapshot retained.')
+          PY
+          python scripts/cbb_1_4_refresh.py generated/cbb_refresh/cbb_1_3_2_team_games.csv research/cbb-1-4-ratings.json
+      - name: Commit test ratings
+        shell: bash
+        run: |
+          if [[ ! -f research/cbb-1-4-ratings.json ]]; then exit 0; fi
+          git add -- research/cbb-1-4-ratings.json
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name=github-actions -c user.email=41898282+github-actions[bot]@users.noreply.github.com commit -m "Refresh CBB test ratings"
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
