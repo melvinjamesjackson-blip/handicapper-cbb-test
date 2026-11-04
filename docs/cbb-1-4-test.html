@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sharp Handicapper | CBB 1.4 Test</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101c29;color:#eef4fb;font:16px system-ui,sans-serif}main{max-width:680px;margin:auto;padding:26px 16px}h1{font-size:1.8rem;margin:8px 0}small,p{color:#b9cadc}section{background:#1b2b3d;border-radius:14px;padding:16px;margin:16px 0}select,button{font:inherit;width:100%;min-height:48px;margin-top:8px;border-radius:8px;padding:8px}button{background:#a2ebce;color:#10251e;font-weight:700;border:0}table{width:100%;border-collapse:collapse;text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}th,td{padding:8px 4px;border-bottom:1px solid #42576c}output{display:block;margin-top:12px;font-weight:700}summary{cursor:pointer}
+</style></head><body><main>
+<small>SHARP HANDICAPPER / HISTORICAL BROWSER TEST</small><h1>CBB 1.4 projection check</h1>
+<p>Replay a historical matchup using its pregame ratings. Compare the browser calculation with the verified Python backtest.</p>
+<section><label for="match">Historical matchup</label><select id="match"></select><button id="check">Compare projections</button><p id="details"></p>
+<table><thead><tr><th>Projection</th><th>Browser</th><th>Python</th></tr></thead><tbody id="results"></tbody></table>
+<output id="status" aria-live="polite"></output></section>
+<section><details><summary>Pregame inputs</summary><p id="inputs"></p></details><p>Five historical fixtures are built in. Positive spread means the home team is the underdog. Data are frozen to each fixture's pregame cutoff.</p></section>
+<script id="fixtures" type="application/json">[{"date": "2025-11-18", "cutoff": "2025-11-17", "home": {"name": "Charleston Southern Buccaneers", "off": 0.7715004262323583, "defense": 0.03155868952499366, "pace": 75.90240000000001, "games": 5}, "away": {"name": "IU Indianapolis Jaguars", "off": 1.4298094102846413, "defense": 0.977337427171284, "pace": 88.32759999999999, "games": 5}, "league": 105.73100840405843, "neutral": false, "expected": [89.75707575431503, 86.52101996615133, 3.2360557881636964]}, {"date": "2025-11-20", "cutoff": "2025-11-19", "home": {"name": "UCF Knights", "off": 3.8980852549137843, "defense": 0.7550606418912695, "pace": 73.7474, "games": 5}, "away": {"name": "Pittsburgh Panthers", "off": 0.8805771540860656, "defense": -3.6569588601914154, "pace": 66.5676, "games": 5}, "league": 105.76429862115901, "neutral": true, "expected": [74.37075605551699, 75.34911039185243, -0.9783543363354426]}, {"date": "2025-12-28", "cutoff": "2025-12-27", "home": {"name": "Sam Houston Bearkats", "off": 5.1811761393465865, "defense": -2.8527862602138017, "pace": 73.92263636363636, "games": 11}, "away": {"name": "College of Biblical Studies Ambassadors", "off": -17.17395353912601, "defense": 10.628178926434607, "pace": 78.225, "games": 8}, "league": 106.69765892434417, "neutral": false, "expected": [94.69576308282252, 64.4338774316665, 30.26188565115602]}, {"date": "2026-04-06", "cutoff": "2026-04-05", "home": {"name": "Michigan Wolverines", "off": 14.521669406042019, "defense": -13.747090254259447, "pace": 71.81474358974359, "games": 39}, "away": {"name": "UConn Huskies", "off": 9.663021037646672, "defense": -11.33614824992948, "pace": 66.15479487179486, "games": 39}, "league": 108.06563649146443, "neutral": true, "expected": [76.74635436974026, 71.73144422709348, 5.014910142646784]}, {"date": "2025-11-21", "cutoff": "2025-11-20", "home": {"name": "Xavier Musketeers", "off": -0.18104923314199783, "defense": -0.7198998951017712, "pace": 70.5026, "games": 5}, "away": {"name": "Georgia Bulldogs", "off": 5.7433387417245685, "defense": -6.616359101108518, "pace": 78.01000000000002, "games": 5}, "league": 105.84650531652377, "neutral": true, "expected": [73.55019460244783, 82.32791834761866, -8.777723745170832]}]</script>
+<script>
+function project({league, home, away, neutral}) {
+  const pace = (home.pace + away.pace) / 2;
+  const advantage = neutral ? 0 : 1.5;
+  const homeScore = (league + home.off + away.defense) * pace / 100 + advantage;
+  const awayScore = (league + away.off + home.defense) * pace / 100 - advantage;
+  return [homeScore, awayScore, awayScore - homeScore, homeScore + awayScore];
+}
+function reference({expected: [home, away, margin]}) {
+  return [home, away, -margin, home + away];
+}
+const cases = JSON.parse(document.getElementById('fixtures').textContent);
+const match = document.getElementById('match');
+for (const [i, item] of cases.entries()) {
+  match.add(new Option(item.away.name + ' at ' + item.home.name + ' · ' + item.date, i));
+}
+function render() {
+  const item = cases[Number(match.value)];
+  const actual = project(item), expected = reference(item);
+  const tbody = document.getElementById('results');
+  tbody.replaceChildren();
+  ['Home score','Away score','Home spread','Total'].forEach((label, i) => {
+    const row = tbody.insertRow();
+    [label, actual[i].toFixed(2), expected[i].toFixed(2)].forEach(value => {
+      row.insertCell().textContent = value;
+    });
+  });
+  document.getElementById('details').textContent = 'Training through ' + item.cutoff + ' · ' + (item.neutral ? 'Neutral court' : 'Home court');
+  document.getElementById('inputs').textContent = [item.home, item.away].map(t =>
+    t.name + ' (' + t.games + ' prior games): offense ' + t.off.toFixed(3) + ', defense allowed ' + t.defense.toFixed(3) + ', pace ' + t.pace.toFixed(3)
+  ).join(' | ') + ' | League efficiency ' + item.league.toFixed(3);
+  const selectedPass = actual.every((value, i) => Math.abs(value - expected[i]) < 1e-8);
+  const passing = cases.filter(c => project(c).every((value, i) => Math.abs(value - reference(c)[i]) < 1e-8)).length;
+  document.getElementById('status').textContent = (selectedPass ? 'PASS' : 'FAIL') + ' · ' + passing + '/' + cases.length + ' fixtures match Python';
+}
+match.addEventListener('change', render);
+document.getElementById('check').addEventListener('click', render);
+render();
+</script></main></body></html>
