@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sharp Handicapper | CBB 1.4 Season Snapshot</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#101c29;color:#eef4fb;font:16px system-ui,sans-serif}main{max-width:680px;margin:auto;padding:26px 16px}h1{font-size:1.8rem;margin:8px 0}small,p{color:#b9cadc}section{background:#1b2b3d;border-radius:14px;padding:16px;margin:16px 0}select,button{font:inherit;width:100%;min-height:48px;margin-top:8px;border-radius:8px;padding:8px}button{background:#a2ebce;color:#10251e;font-weight:700;border:0}table{width:100%;border-collapse:collapse;text-align:right;font-variant-numeric:tabular-nums}th:first-child,td:first-child{text-align:left}th,td{padding:8px 4px;border-bottom:1px solid #42576c}output{display:block;margin-top:12px;font-weight:700}summary{cursor:pointer}
+#lean.active{background:#a2ebce;color:#10251e;padding:10px;border-radius:8px;font-weight:700} #line{display:block;font:inherit;width:100%;min-height:44px;margin-top:8px}</style></head><body><main>
+<small>SHARP HANDICAPPER / CBB RESEARCH</small><h1>CBB 1.4 ratings refresh test</h1>
+<p id="coverage" aria-live="polite">Loading test ratings…</p>
+<p>2026–27 season. Division membership has not been verified.</p>
+<section>
+<label for="away">Away team</label><select id="away"></select>
+<label for="home">Home team</label><select id="home"></select>
+<p><label><input type="checkbox" id="neutral"> Neutral court</label></p>
+<p><label><input type="checkbox" id="diagnostic"> Show diagnostic projections below five games per team</label></p>
+<button id="calculate" disabled>Calculate projection</button>
+<p><label for="line">Market home spread (optional)</label><input id="line" type="number" step="any" placeholder="e.g. -7.5"></p><p id="lean"></p><p id="inputs"></p><output id="status" aria-live="polite"></output>
+<table><tbody id="results"></tbody></table></section></main>
+
+<script>
+function project({league, home, away, neutral}) {
+  const pace = (home.pace + away.pace) / 2;
+  const advantage = neutral ? 0 : 1.5;
+  const homeScore = (league + home.off + away.defense) * pace / 100 + advantage;
+  const awayScore = (league + away.off + home.defense) * pace / 100 - advantage;
+  return [homeScore, awayScore, awayScore - homeScore, homeScore + awayScore];
+}
+
+const field = id => document.getElementById(id);
+let snapshot;
+const byId = new Map();
+async function load() {
+  const url = 'https://raw.githubusercontent.com/melvinjamesjackson-blip/handicapper-cbb-test/HEAD/research/cbb-1-4-ratings.json';
+  try {
+    const response = await fetch(url, {cache: 'no-store'});
+    if (!response.ok) throw new Error('HTTP ' + response.status);
+    snapshot = await response.json();
+    if (!Number.isFinite(snapshot.league) || !snapshot.teams.length) throw new Error('Invalid ratings');
+    for (const team of snapshot.teams) byId.set(team.id, team);
+    for (const role of ['away', 'home']) {
+      field(role).add(new Option('Select a team', ''));
+      for (const team of snapshot.teams) field(role).add(new Option(team.name, team.id));
+    }
+    field('coverage').textContent = 'Ratings through ' + snapshot.cutoff + ' · ' + snapshot.usable_games + ' usable games · ' + snapshot.teams.length + ' teams';
+    field('calculate').disabled = false;
+    render();
+  } catch (error) {
+    field('coverage').textContent = 'Ratings unavailable. Run CBB 1.4 Test Ratings Refresh in the public CBB test repo and reload. ' + error.message;
+  }
+}
+function render() {
+  if (!snapshot) return;
+  const lean = field('lean');
+  lean.textContent = '';
+  lean.className = '';
+  const home = byId.get(field('home').value);
+  const away = byId.get(field('away').value);
+  const results = field('results');
+  results.replaceChildren();
+  field('inputs').textContent = '';
+  if (!home || !away || home === away) {
+    field('status').textContent = 'Select two different teams.';
+    return;
+  }
+  field('inputs').textContent = home.name + ': ' + home.games + ' usable game(s) · ' + away.name + ': ' + away.games + ' usable game(s)';
+  const limited = Math.min(home.games, away.games) < 5;
+  if (limited && !field('diagnostic').checked) {
+    field('status').textContent = 'Below the backtest minimum of five usable games per team.';
+    return;
+  }
+  field('status').textContent = limited ? 'Diagnostic only · limited sample' : 'CBB 1.4 projection';
+  const values = project({league: snapshot.league, home, away, neutral: field('neutral').checked});
+  const market = field('line').valueAsNumber;
+  if (Number.isFinite(market)) {
+    const edge = market - values[2];
+    if (limited) lean.textContent = 'Pass · fewer than five games per team';
+    else if (Math.abs(edge) < 2) lean.textContent = 'Pass · spread edge under 2 points';
+    else {
+      lean.textContent = 'Lean ' + (edge > 0 ? 'Home · ' + home.name : 'Away · ' + away.name);
+      lean.className = 'active';
+    }
+  }
+  ['Home score', 'Away score', 'Home spread', 'Total'].forEach((label, i) => {
+    const row = results.insertRow();
+    row.insertCell().textContent = label;
+    row.insertCell().textContent = (i === 2 && values[i] > 0 ? '+' : '') + values[i].toFixed(2);
+  });
+}
+for (const id of ['home','away','neutral','diagnostic']) field(id).addEventListener('change', render);
+field('calculate').addEventListener('click', render);
+field('line').addEventListener('input', render);
+load();
+</script></body></html>
