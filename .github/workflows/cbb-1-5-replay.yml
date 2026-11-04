@@ -1,0 +1,39 @@
+name: CBB 1.5 Early Season Replay
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Collect the 2024–25 prior season
+        run: python scripts/cbb_1_3_2.py --start 2024-11-04 --end 2025-04-07 --out generated/cbb_prior
+      - name: Replay the 2025–26 opening weeks
+        run: |
+          mkdir -p generated/cbb_15
+          python - <<'PY'
+          import csv
+          from pathlib import Path
+          for name in ('games', 'team_games'):
+              filename = f'cbb_1_3_2_{name}.csv'
+              with Path('research', filename).open(newline='', encoding='utf-8-sig') as src:
+                  reader = csv.DictReader(src)
+                  with Path('generated/cbb_15', filename).open('w', newline='', encoding='utf-8') as dst:
+                      writer = csv.DictWriter(dst, fieldnames=reader.fieldnames)
+                      writer.writeheader()
+                      writer.writerows(row for row in reader if '2025-11-03' <= row['date'] <= '2025-11-30')
+          PY
+          python scripts/cbb_1_5_replay.py --prior generated/cbb_prior/cbb_1_3_2_team_games.csv --current generated/cbb_15/cbb_1_3_2_team_games.csv --games generated/cbb_15/cbb_1_3_2_games.csv --out generated/cbb_15/cbb_1_5_report.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cbb-1-5-replay
+          path: |
+            generated/cbb_15/cbb_1_5_report.json
+            generated/cbb_prior/cbb_1_3_2_report.json
