@@ -1,0 +1,71 @@
+name: CBB Schedule Preview
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0,13 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cbb-gameday-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'melvinjamesjackson-blip/handicapper-cbb-test' && github.ref_name == github.event.repository.default_branch
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch today's and tomorrow's schedules
+        run: |
+          python - <<'PY'
+          import datetime as dt
+          import json
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          from scripts.cbb_gameday import event_row, get_day
+
+          central = ZoneInfo('America/Chicago')
+          now = dt.datetime.now(central)
+          slates = {}
+          for day in (now.date(), now.date() + dt.timedelta(days=1)):
+              board = get_day(day)
+              if not isinstance(board.get('events'), list):
+                  raise ValueError(f'Invalid scoreboard for {day}')
+              games = {}
+              for event in board['events']:
+                  row = event_row(event)
+                  if not row or not row['id']:
+                      raise ValueError(f'Invalid matchup on scoreboard for {day}')
+                  kick = dt.datetime.fromisoformat(event['date'].replace('Z', '+00:00')).astimezone(central)
+                  status = event.get('status', {}).get('type', {})
+                  competition = event['competitions'][0]
+                  if kick.date() != day and competition.get('timeValid', True):
+                      continue
+                  row.update(
+                      date=day.isoformat(),
+                      tipoff_ct=kick.strftime('%I:%M %p CT').lstrip('0') if competition.get('timeValid', True) else 'Time TBD',
+                      venue=(competition.get('venue') or {}).get('fullName', ''),
+                      schedule_status=status.get('description', ''),
+                      inactive=status.get('name') in ('STATUS_POSTPONED', 'STATUS_CANCELED', 'STATUS_CANCELLED'),
+                  )
+                  games[row['id']] = row
+              slates[day.isoformat()] = {'day': day.isoformat(), 'games': list(games.values())}
+              print(f'{day}: {len(games)} matchups')
+          output = Path('docs/cbb-schedule-preview.json')
+          if output.exists():
+              previous = json.loads(output.read_text())['slates']
+              for day, slate in slates.items():
+                  if not slate['games'] and previous.get(day, {}).get('games'):
+                      raise ValueError(f'Refusing to replace an existing slate with an empty feed for {day}')
+          output.write_text(json.dumps({'updated_at': now.isoformat(), 'slates': slates}, indent=2) + '\n')
+          PY
+      - name: Publish schedule
+        run: |
+          git add docs/cbb-schedule-preview.json
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name=github-actions -c user.email=41898282+github-actions\[bot\]@users.noreply.github.com commit -m "Publish CBB schedule preview"
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
