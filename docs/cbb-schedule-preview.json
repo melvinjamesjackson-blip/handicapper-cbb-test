@@ -1,24 +1,9 @@
 {
-  "updated_at": "2026-11-12T08:24:05.186131-06:00",
+  "updated_at": "2026-11-12T19:13:32.450189-06:00",
   "slates": {
     "2026-11-12": {
       "day": "2026-11-12",
       "games": [
-        {
-          "id": "401920073",
-          "date": "2026-11-12",
-          "tipoff_et": "03:00 PM ET",
-          "home_id": "2244",
-          "away_id": "140",
-          "home": "George Mason Patriots",
-          "away": "Kansas City Roos",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "2:00 PM CT",
-          "venue": "McArthur Center",
-          "schedule_status": "Scheduled",
-          "inactive": false
-        },
         {
           "id": "401925631",
           "date": "2026-11-12",
@@ -31,37 +16,7 @@
           "completed": false,
           "tipoff_ct": "5:00 PM CT",
           "venue": "McArthur Center",
-          "schedule_status": "Scheduled",
-          "inactive": false
-        },
-        {
-          "id": "401923400",
-          "date": "2026-11-12",
-          "tipoff_et": "06:00 PM ET",
-          "home_id": "104",
-          "away_id": "353",
-          "home": "Boston University Terriers",
-          "away": "Johnson & Wales Griffins",
-          "neutral": false,
-          "completed": false,
-          "tipoff_ct": "5:00 PM CT",
-          "venue": "Case Gym",
-          "schedule_status": "Scheduled",
-          "inactive": false
-        },
-        {
-          "id": "401921086",
-          "date": "2026-11-12",
-          "tipoff_et": "06:00 PM ET",
-          "home_id": "2378",
-          "away_id": "2415",
-          "home": "UMBC Retrievers",
-          "away": "Morgan State Bears",
-          "neutral": false,
-          "completed": false,
-          "tipoff_ct": "5:00 PM CT",
-          "venue": "Chesapeake Employers Insurance Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "End of Period",
           "inactive": false
         },
         {
@@ -76,7 +31,7 @@
           "completed": false,
           "tipoff_ct": "5:30 PM CT",
           "venue": "Bryce Jordan Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -91,7 +46,7 @@
           "completed": false,
           "tipoff_ct": "5:30 PM CT",
           "venue": "Simon Skjodt Assembly Hall",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -106,7 +61,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "The HTC Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -121,7 +76,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Memorial Coliseum (IN)",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -136,7 +91,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "VyStar Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -151,7 +106,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "William H. Pitt Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -166,7 +121,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "M&T Bank Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -181,7 +136,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Burr Gymnasium",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -196,7 +151,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Hope Coliseum",
-          "schedule_status": "Scheduled",
+          "schedule_status": "Halftime",
           "inactive": false
         },
         {
@@ -211,7 +166,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "SECU Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -226,7 +181,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Qubein Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -241,7 +196,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Western Hall",
-          "schedule_status": "Scheduled",
+          "schedule_status": "Halftime",
           "inactive": false
         },
         {
@@ -256,7 +211,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Thomas M. Ryan Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -271,7 +226,7 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Pizzitola Sports Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -286,7 +241,58 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Stroh Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
+          "inactive": false
+        },
+        {
+          "id": "401920073",
+          "date": "2026-11-12",
+          "tipoff_et": "03:00 PM ET",
+          "home_id": "2244",
+          "away_id": "140",
+          "home": "George Mason Patriots",
+          "away": "Kansas City Roos",
+          "neutral": true,
+          "completed": true,
+          "home_score": 76,
+          "away_score": 68,
+          "tipoff_ct": "2:00 PM CT",
+          "venue": "McArthur Center",
+          "schedule_status": "Final",
+          "inactive": false
+        },
+        {
+          "id": "401923400",
+          "date": "2026-11-12",
+          "tipoff_et": "06:00 PM ET",
+          "home_id": "104",
+          "away_id": "353",
+          "home": "Boston University Terriers",
+          "away": "Johnson & Wales Griffins",
+          "neutral": false,
+          "completed": true,
+          "home_score": 100,
+          "away_score": 74,
+          "tipoff_ct": "5:00 PM CT",
+          "venue": "Case Gym",
+          "schedule_status": "Final",
+          "inactive": false
+        },
+        {
+          "id": "401921086",
+          "date": "2026-11-12",
+          "tipoff_et": "06:00 PM ET",
+          "home_id": "2378",
+          "away_id": "2415",
+          "home": "UMBC Retrievers",
+          "away": "Morgan State Bears",
+          "neutral": false,
+          "completed": true,
+          "home_score": 85,
+          "away_score": 70,
+          "tipoff_ct": "5:00 PM CT",
+          "venue": "Chesapeake Employers Insurance Arena",
+          "schedule_status": "Final",
           "inactive": false
         },
         {
@@ -301,7 +307,7 @@
           "completed": false,
           "tipoff_ct": "7:00 PM CT",
           "venue": "Event Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -316,7 +322,7 @@
           "completed": false,
           "tipoff_ct": "7:00 PM CT",
           "venue": "Reed Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -331,7 +337,7 @@
           "completed": false,
           "tipoff_ct": "7:00 PM CT",
           "venue": "Pensacola Bay Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -346,7 +352,7 @@
           "completed": false,
           "tipoff_ct": "7:00 PM CT",
           "venue": "The Barn by Blue Cross and Blue Shield of Minnesota",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -361,7 +367,7 @@
           "completed": false,
           "tipoff_ct": "7:00 PM CT",
           "venue": "Banterra Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "In Progress",
           "inactive": false
         },
         {
@@ -456,21 +462,6 @@
           "completed": false,
           "tipoff_ct": "11:00 AM CT",
           "venue": "Resch Center",
-          "schedule_status": "Scheduled",
-          "inactive": false
-        },
-        {
-          "id": "401926203",
-          "date": "2026-11-13",
-          "tipoff_et": "12:00 PM ET",
-          "home_id": "2678",
-          "away_id": "124942",
-          "home": "VMI Keydets",
-          "away": "Mary Baldwin Fighting Squirrels",
-          "neutral": false,
-          "completed": false,
-          "tipoff_ct": "11:00 AM CT",
-          "venue": "Cameron Hall",
           "schedule_status": "Scheduled",
           "inactive": false
         },
@@ -681,6 +672,21 @@
           "completed": false,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Kathleen and Tom Elam Center",
+          "schedule_status": "Scheduled",
+          "inactive": false
+        },
+        {
+          "id": "401926203",
+          "date": "2026-11-13",
+          "tipoff_et": "07:00 PM ET",
+          "home_id": "2678",
+          "away_id": "124942",
+          "home": "VMI Keydets",
+          "away": "Mary Baldwin Fighting Squirrels",
+          "neutral": false,
+          "completed": false,
+          "tipoff_ct": "6:00 PM CT",
+          "venue": "Cameron Hall",
           "schedule_status": "Scheduled",
           "inactive": false
         },
