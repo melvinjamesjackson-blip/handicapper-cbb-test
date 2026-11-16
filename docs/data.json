@@ -60,7 +60,7 @@
       "home": "George Washington Revolutionaries",
       "away": "Ferrum Panthers",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": false,
       "reason": "Insufficient prior-season coverage (>=600 total finals and >=5 games per side required)"
     },
@@ -302,7 +302,7 @@
       "home": "Morehead State Eagles",
       "away": "Miami (OH) Hamilton Harriers",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": false,
       "reason": "Insufficient prior-season coverage (>=600 total finals and >=5 games per side required)"
     },
@@ -524,7 +524,7 @@
       "home": "North Alabama Lions",
       "away": "Fisk Bulldogs",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": false,
       "reason": "Insufficient prior-season coverage (>=600 total finals and >=5 games per side required)"
     },
@@ -550,7 +550,7 @@
       "home": "UTEP Miners",
       "away": "Florida A&M Rattlers",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": true,
       "pred_home": 73.7,
       "pred_away": 65.3,
