@@ -655,9 +655,9 @@
       "home_id": "48",
       "away_id": "111914",
       "home": "Delaware Blue Hens",
-      "away": "Wilson WILSON",
+      "away": "Wilson Phoenix",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": false,
       "reason": "Insufficient prior-season coverage (>=600 total finals and >=5 games per side required)"
     },
@@ -839,7 +839,7 @@
     {
       "id": "401922221",
       "date": "2026-11-17",
-      "tipoff_et": "08:00 PM ET",
+      "tipoff_et": "07:00 PM ET",
       "home_id": "2454",
       "away_id": "123362",
       "home": "North Florida Ospreys",
@@ -1072,7 +1072,7 @@
       "home": "Murray State Racers",
       "away": "Hofstra Pride",
       "neutral": true,
-      "completed": false,
+      "completed": true,
       "projection_available": true,
       "pred_home": 76.2,
       "pred_away": 80.0,
@@ -1121,7 +1121,7 @@
       "home": "Southern Jaguars",
       "away": "Louisiana Christian Wildcats",
       "neutral": false,
-      "completed": false,
+      "completed": true,
       "projection_available": false,
       "reason": "Insufficient prior-season coverage (>=600 total finals and >=5 games per side required)"
     },
@@ -1146,7 +1146,7 @@
     {
       "id": "401930568",
       "date": "2026-11-17",
-      "tipoff_et": "08:00 PM ET",
+      "tipoff_et": "07:00 PM ET",
       "home_id": "6",
       "away_id": "2590",
       "home": "South Alabama Jaguars",
