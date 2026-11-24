@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   publish:
-    if: github.repository == 'melvinjamesjackson-blip/handicapper-cbb-test' && github.ref_name == github.event.repository.default_branch
+        if: github.repository == 'melvinjamesjackson-blip/handicapper-cbb-test' && (github.ref_name == github.event.repository.default_branch || (github.event_name == 'workflow_dispatch' && github.ref_name == 'cbb-current-season-audit'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
@@ -89,8 +89,9 @@ jobs:
                       raise ValueError(f'Refusing to replace an existing slate with an empty feed for {day}')
           output.write_text(json.dumps({'updated_at': now.isoformat(), 'slates': slates}, indent=2) + '\n')
           PY
-      - name: Publish schedule
-        run: |
+            - name: Publish schedule
+        if: github.ref_name == github.event.repository.default_branch
+        run: 
           git add docs/cbb-schedule-preview.json
           if git diff --cached --quiet; then exit 0; fi
           git -c user.name=github-actions -c user.email=41898282+github-actions\[bot\]@users.noreply.github.com commit -m "Publish CBB schedule preview"
