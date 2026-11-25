@@ -1,0 +1,176 @@
+name: CBB Schedule Preview
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 0,13 * * *'
+permissions:
+  contents: write
+concurrency:
+  group: cbb-gameday-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: >-
+      github.repository == 'melvinjamesjackson-blip/handicapper-cbb-test' &&
+      (github.ref_name == github.event.repository.default_branch ||
+      (github.event_name == 'workflow_dispatch' && github.ref_name == 'cbb-full-slate-comparison'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Fetch today's and tomorrow's schedules
+        run: |
+          python - <<'PY'
+          import csv
+          import datetime as dt
+          import json
+          from pathlib import Path
+          from zoneinfo import ZoneInfo
+
+          from scripts.cbb_gameday import ats_history, ats_summary, event_row, fetch_range, get_day, project, ratings
+
+          central = ZoneInfo('America/Chicago')
+          now = dt.datetime.now(central)
+          prior_games = []
+          prior_path = Path('research/cbb_1_3_2_games.csv')
+          if prior_path.exists():
+              with prior_path.open(encoding='utf-8-sig', newline='') as source:
+                  for record in csv.DictReader(source):
+                      if not ('2025-11-03' <= record['date'] <= '2026-04-06'):
+                          continue
+                      prior_games.append({
+                          'completed': True,
+                          'home_id': record['home'], 'away_id': record['away'],
+                          'home': record['home_name'], 'away': record['away_name'],
+                          'home_score': int(record['home_score']), 'away_score': int(record['away_score']),
+                          'neutral': record['neutral'].strip().lower() in ('1', 'true'),
+                      })
+          prior, final_count = ratings(prior_games)
+          cutoff = now.date() - dt.timedelta(days=1)
+          season_start = dt.date(now.year if now.month >= 7 else now.year - 1, 11, 1)
+          current = {}
+          ats = {}
+          comparison_error = None
+          try:
+              current_rows = [
+                  row for row in fetch_range(season_start, cutoff)
+                  if season_start.isoformat() <= row['date'] <= cutoff.isoformat()
+              ]
+              current, _ = ratings(current_rows)
+              if not current:
+                  comparison_error = 'No current-season finals available'
+          except (OSError, ValueError) as exc:
+              comparison_error = 'Current-season results unavailable'
+              print(f'Comparison data: {exc}')
+          if current:
+              try:
+                  ats = ats_history(current_rows)
+              except (OSError, ValueError, KeyError) as exc:
+                  print(f'Closing line history unavailable: {exc}')
+          slates = {}
+          for day in (now.date(), now.date() + dt.timedelta(days=1)):
+              board = get_day(day)
+              if not isinstance(board.get('events'), list):
+                  raise ValueError(f'Invalid scoreboard for {day}')
+              games = {}
+              for event in board['events']:
+                  row = event_row(event)
+                  if not row or not row['id']:
+                      raise ValueError(f'Invalid matchup on scoreboard for {day}')
+                  kick = dt.datetime.fromisoformat(event['date'].replace('Z', '+00:00')).astimezone(central)
+                  status = event.get('status', {}).get('type', {})
+                  competition = event['competitions'][0]
+                  if kick.date() != day and competition.get('timeValid', True):
+                      continue
+                  row.update(
+                      date=day.isoformat(),
+                      tipoff_ct=kick.strftime('%I:%M %p CT').lstrip('0') if competition.get('timeValid', True) else 'Time TBD',
+                      venue=(competition.get('venue') or {}).get('fullName', ''),
+                      schedule_status=status.get('description', ''),
+                      inactive=status.get('name') in ('STATUS_POSTPONED', 'STATUS_CANCELED', 'STATUS_CANCELLED'),
+                  )
+                  home = prior.get(row['home_id'])
+                  away = prior.get(row['away_id'])
+                  row['projection_available'] = bool(
+                      not row['inactive'] and final_count >= 600
+                      and home and away and min(home['games'], away['games']) >= 5
+                  )
+                  if row['projection_available']:
+                      advantage = 0 if row['neutral'] else 1.5
+                      hs = home['mean'] + home['off'] + away['defense_allowed'] + advantage
+                      ass = away['mean'] + away['off'] + home['defense_allowed'] - advantage
+                      row.update(
+                          pred_home=round(hs, 1), pred_away=round(ass, 1),
+                          home_margin=round(hs-ass, 1), total=round(hs+ass, 1),
+                          home_prior_games=home['games'], away_prior_games=away['games'],
+                          projection_source='Historical baseline',
+                      )
+                  else:
+                      row['reason'] = 'Historical baseline unavailable: prior-season coverage required.'
+                  if not row['inactive']:
+                      # Selected on November 1–16; assessed on November 17–25.
+                      comparison = project(row, prior, current, cutoff, prior_weight=2) if not comparison_error else {}
+                      if comparison.get('projection_available') and (
+                          comparison['home_current_games'] or comparison['away_current_games']
+                      ):
+                          row['comparison'] = {
+                              key: comparison[key] for key in (
+                                  'home_margin', 'pred_home', 'pred_away',
+                                  'home_current_games', 'away_current_games',
+                                  'current_data_through', 'venue_margin',
+                              )
+                          }
+                      else:
+                          row['comparison_reason'] = comparison_error or 'Insufficient current-season rating data'
+                      row.update(home_ats=ats_summary(ats, row['home_id']),
+                                 away_ats=ats_summary(ats, row['away_id']))
+                  games[row['id']] = row
+              slates[day.isoformat()] = {'day': day.isoformat(), 'games': list(games.values())}
+              print(f'{day}: {len(games)} matchups')
+          output = Path('docs/cbb-schedule-preview.json')
+          if output.exists():
+              previous = json.loads(output.read_text())['slates']
+              for day, slate in slates.items():
+                  if not slate['games'] and previous.get(day, {}).get('games'):
+                      raise ValueError(f'Refusing to replace an existing slate with an empty feed for {day}')
+          output.write_text(json.dumps({'updated_at': now.isoformat(), 'slates': slates}, indent=2) + '\n')
+          PY
+      - name: Build standalone comparison preview
+        if: github.ref_name == 'cbb-full-slate-comparison'
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          docs = Path('docs')
+          snapshot = json.loads((docs / 'cbb-schedule-preview.json').read_text())
+          page = (docs / 'index.html').read_text()
+          data = json.dumps(snapshot).replace('<', '\\u003c')
+          page, count = page.replace(
+              "const day=selectedDay(),early=el('slate').value==='1';",
+              "const day=Object.keys(schedule.slates)[Number(el('slate').value)],early=el('slate').value==='1';",
+              1,
+          ), page.count('});load();')
+          if count != 1:
+              raise ValueError('Cannot locate preview initialization')
+          start = f"schedule={data};el('refresh').disabled=true;showDay();"
+          page = page.replace('});load();', '});' + start, 1)
+          Path('cbb-full-slate-preview.html').write_text(page)
+          PY
+      - name: Upload standalone comparison preview
+        if: github.ref_name == 'cbb-full-slate-comparison'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cbb-full-slate-comparison
+          path: cbb-full-slate-preview.html
+          if-no-files-found: error
+      - name: Publish schedule
+        if: github.ref_name == github.event.repository.default_branch
+        run: |
+          git add docs/cbb-schedule-preview.json
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name=github-actions -c user.email=41898282+github-actions\[bot\]@users.noreply.github.com commit -m "Publish CBB schedule preview"
+          git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
