@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T02:23:04.726344-06:00",
+  "updated_at": "2026-11-25T02:24:54.711578-06:00",
   "slates": {
     "2026-11-25": {
       "day": "2026-11-25",
@@ -17,7 +17,15 @@
           "tipoff_ct": "9:00 AM CT",
           "venue": "State Farm Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 82.7,
+          "pred_away": 76.6,
+          "home_margin": 6.0,
+          "total": 159.3,
+          "home_prior_games": 32,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401928845",
@@ -32,7 +40,15 @@
           "tipoff_ct": "10:00 AM CT",
           "venue": "The Reef",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 77.3,
+          "pred_away": 75.8,
+          "home_margin": 1.4,
+          "total": 153.1,
+          "home_prior_games": 32,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921702",
@@ -47,7 +63,15 @@
           "tipoff_ct": "10:00 AM CT",
           "venue": "Suncoast Credit Union Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 62.6,
+          "pred_away": 70.5,
+          "home_margin": -7.9,
+          "total": 133.1,
+          "home_prior_games": 34,
+          "away_prior_games": 36,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911201",
@@ -62,7 +86,9 @@
           "tipoff_ct": "10:00 AM CT",
           "venue": "Rose Hill Gym",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401920428",
@@ -77,7 +103,15 @@
           "tipoff_ct": "11:00 AM CT",
           "venue": "Imperial Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 69.4,
+          "pred_away": 80.0,
+          "home_margin": -10.6,
+          "total": 149.4,
+          "home_prior_games": 32,
+          "away_prior_games": 36,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920196",
@@ -92,7 +126,9 @@
           "tipoff_ct": "11:00 AM CT",
           "venue": "Michael J. Hagan '85 Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401919762",
@@ -107,7 +143,9 @@
           "tipoff_ct": "11:00 AM CT",
           "venue": "Bogota Savings Bank Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401928831",
@@ -122,7 +160,15 @@
           "tipoff_ct": "11:30 AM CT",
           "venue": "State Farm Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.1,
+          "pred_away": 77.8,
+          "home_margin": -3.7,
+          "total": 151.9,
+          "home_prior_games": 35,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920547",
@@ -137,7 +183,15 @@
           "tipoff_ct": "11:30 AM CT",
           "venue": "Hard Rock Hotel Riviera Maya",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.9,
+          "pred_away": 81.4,
+          "home_margin": -4.4,
+          "total": 158.3,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401926835",
@@ -152,7 +206,15 @@
           "tipoff_ct": "12:00 PM CT",
           "venue": "Stony Brook Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.4,
+          "pred_away": 73.9,
+          "home_margin": 0.5,
+          "total": 148.4,
+          "home_prior_games": 32,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401924268",
@@ -167,7 +229,15 @@
           "tipoff_ct": "12:00 PM CT",
           "venue": "Ocean Bank Convocation Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.6,
+          "pred_away": 78.8,
+          "home_margin": -0.2,
+          "total": 157.4,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920067",
@@ -182,7 +252,9 @@
           "tipoff_ct": "12:00 PM CT",
           "venue": "Thomas M. Ryan Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401911029",
@@ -197,7 +269,15 @@
           "tipoff_ct": "12:00 PM CT",
           "venue": "Millett Hall",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 91.9,
+          "pred_away": 76.5,
+          "home_margin": 15.3,
+          "total": 168.4,
+          "home_prior_games": 34,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401919007",
@@ -212,7 +292,15 @@
           "tipoff_ct": "12:30 PM CT",
           "venue": "Suncoast Credit Union Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.0,
+          "pred_away": 68.1,
+          "home_margin": 5.9,
+          "total": 142.2,
+          "home_prior_games": 34,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921669",
@@ -227,7 +315,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 80.3,
+          "pred_away": 77.7,
+          "home_margin": 2.6,
+          "total": 157.9,
+          "home_prior_games": 32,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401929406",
@@ -242,7 +338,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Sanford Coyote Sports Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 84.8,
+          "pred_away": 77.7,
+          "home_margin": 7.2,
+          "total": 162.5,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401928850",
@@ -257,7 +361,9 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "University Arena (MI)",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401926207",
@@ -272,7 +378,9 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Ramsey Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401924705",
@@ -287,7 +395,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Levien Gymnasium",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.2,
+          "pred_away": 68.1,
+          "home_margin": 7.1,
+          "total": 143.3,
+          "home_prior_games": 28,
+          "away_prior_games": 29,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401922223",
@@ -302,7 +418,9 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "UNF Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401920868",
@@ -317,7 +435,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Joel & Diane Bloom Wellness and Events Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.5,
+          "pred_away": 73.6,
+          "home_margin": 2.9,
+          "total": 150.0,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917967",
@@ -332,7 +458,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "First Bank & Trust Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.7,
+          "pred_away": 68.5,
+          "home_margin": 6.2,
+          "total": 143.1,
+          "home_prior_games": 32,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911311",
@@ -347,7 +481,9 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Pizzitola Sports Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401921715",
@@ -362,7 +498,15 @@
           "tipoff_ct": "1:30 PM CT",
           "venue": "Lahaina Civic Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.3,
+          "pred_away": 67.9,
+          "home_margin": 15.4,
+          "total": 151.2,
+          "home_prior_games": 39,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920809",
@@ -377,7 +521,15 @@
           "tipoff_ct": "1:30 PM CT",
           "venue": "Imperial Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 80.2,
+          "pred_away": 87.9,
+          "home_margin": -7.7,
+          "total": 168.0,
+          "home_prior_games": 33,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401928836",
@@ -392,7 +544,15 @@
           "tipoff_ct": "2:00 PM CT",
           "venue": "State Farm Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 70.0,
+          "pred_away": 78.3,
+          "home_margin": -8.3,
+          "total": 148.3,
+          "home_prior_games": 32,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920548",
@@ -407,7 +567,15 @@
           "tipoff_ct": "2:00 PM CT",
           "venue": "Hard Rock Hotel Riviera Maya",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 72.9,
+          "pred_away": 69.4,
+          "home_margin": 3.4,
+          "total": 142.3,
+          "home_prior_games": 35,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401919042",
@@ -422,7 +590,15 @@
           "tipoff_ct": "2:00 PM CT",
           "venue": "Gallagher-Iba Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 93.0,
+          "pred_away": 73.7,
+          "home_margin": 19.3,
+          "total": 166.8,
+          "home_prior_games": 35,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401928359",
@@ -437,7 +613,15 @@
           "tipoff_ct": "2:30 PM CT",
           "venue": "Ocean Bank Convocation Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.9,
+          "pred_away": 82.6,
+          "home_margin": 1.3,
+          "total": 166.6,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925943",
@@ -452,7 +636,15 @@
           "tipoff_ct": "3:00 PM CT",
           "venue": "Burns Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 96.0,
+          "pred_away": 66.1,
+          "home_margin": 29.9,
+          "total": 162.1,
+          "home_prior_games": 34,
+          "away_prior_games": 7,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925050",
@@ -467,7 +659,15 @@
           "tipoff_ct": "3:00 PM CT",
           "venue": "Lakefront Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.9,
+          "pred_away": 71.0,
+          "home_margin": 4.9,
+          "total": 146.9,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401924737",
@@ -482,7 +682,15 @@
           "tipoff_ct": "3:00 PM CT",
           "venue": "Trask Coliseum",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.9,
+          "pred_away": 67.1,
+          "home_margin": 7.8,
+          "total": 142.0,
+          "home_prior_games": 34,
+          "away_prior_games": 29,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921703",
@@ -497,7 +705,15 @@
           "tipoff_ct": "3:00 PM CT",
           "venue": "Suncoast Credit Union Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.5,
+          "pred_away": 71.8,
+          "home_margin": 3.7,
+          "total": 147.3,
+          "home_prior_games": 34,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920858",
@@ -512,7 +728,15 @@
           "tipoff_ct": "3:00 PM CT",
           "venue": "Cam Henderson Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 84.1,
+          "pred_away": 75.1,
+          "home_margin": 9.0,
+          "total": 159.2,
+          "home_prior_games": 32,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921670",
@@ -527,7 +751,15 @@
           "tipoff_ct": "3:30 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 77.5,
+          "pred_away": 76.2,
+          "home_margin": 1.3,
+          "total": 153.7,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401926065",
@@ -542,7 +774,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "Pinnacle Bank Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.9,
+          "pred_away": 66.2,
+          "home_margin": 17.7,
+          "total": 150.1,
+          "home_prior_games": 35,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917182",
@@ -557,7 +797,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "Imperial Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.7,
+          "pred_away": 78.1,
+          "home_margin": -2.4,
+          "total": 153.7,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925917",
@@ -572,7 +820,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "SRC Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 70.3,
+          "pred_away": 75.1,
+          "home_margin": -4.8,
+          "total": 145.4,
+          "home_prior_games": 32,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925688",
@@ -587,7 +843,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "Thomas Assembly Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.3,
+          "pred_away": 65.4,
+          "home_margin": 13.0,
+          "total": 143.7,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920237",
@@ -602,7 +866,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "Leede Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 77.6,
+          "pred_away": 69.4,
+          "home_margin": 8.1,
+          "total": 147.0,
+          "home_prior_games": 27,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921716",
@@ -617,7 +889,15 @@
           "tipoff_ct": "4:30 PM CT",
           "venue": "Lahaina Civic Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.6,
+          "pred_away": 90.8,
+          "home_margin": -7.2,
+          "total": 174.4,
+          "home_prior_games": 33,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401922253",
@@ -632,7 +912,9 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "Prather Coliseum",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401920549",
@@ -647,7 +929,15 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "Hard Rock Hotel Riviera Maya",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.4,
+          "pred_away": 80.4,
+          "home_margin": -4.0,
+          "total": 156.8,
+          "home_prior_games": 32,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920299",
@@ -662,7 +952,15 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "Dee Events Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 84.7,
+          "pred_away": 80.3,
+          "home_margin": 4.4,
+          "total": 165.0,
+          "home_prior_games": 32,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911241",
@@ -677,7 +975,15 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "Robins Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 80.8,
+          "pred_away": 71.7,
+          "home_margin": 9.1,
+          "total": 152.5,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401909720",
@@ -692,7 +998,15 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "JMA Wireless Dome",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.8,
+          "pred_away": 69.6,
+          "home_margin": 9.1,
+          "total": 148.4,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401909568",
@@ -707,7 +1021,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 72.3,
+          "pred_away": 66.3,
+          "home_margin": 6.0,
+          "total": 138.6,
+          "home_prior_games": 38,
+          "away_prior_games": 40,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401922285",
@@ -722,7 +1044,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "McAlister Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 71.1,
+          "pred_away": 74.1,
+          "home_margin": -3.0,
+          "total": 145.3,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921170",
@@ -737,7 +1067,9 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Wolstein Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401921108",
@@ -752,7 +1084,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Truist Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 86.4,
+          "pred_away": 77.0,
+          "home_margin": 9.4,
+          "total": 163.4,
+          "home_prior_games": 34,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920916",
@@ -767,7 +1107,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "First Community Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 73.7,
+          "pred_away": 62.4,
+          "home_margin": 11.3,
+          "total": 136.1,
+          "home_prior_games": 32,
+          "away_prior_games": 30,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920847",
@@ -782,7 +1130,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Trask Coliseum",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.4,
+          "pred_away": 72.8,
+          "home_margin": 1.5,
+          "total": 147.2,
+          "home_prior_games": 34,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920076",
@@ -797,7 +1153,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "EagleBank Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.7,
+          "pred_away": 68.3,
+          "home_margin": 7.4,
+          "total": 144.1,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401918971",
@@ -812,7 +1176,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 81.6,
+          "pred_away": 78.5,
+          "home_margin": 3.2,
+          "total": 160.1,
+          "home_prior_games": 36,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401918960",
@@ -827,7 +1199,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Lenovo Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 86.9,
+          "pred_away": 72.2,
+          "home_margin": 14.8,
+          "total": 159.1,
+          "home_prior_games": 34,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911028",
@@ -842,7 +1222,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Kohl Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 90.5,
+          "pred_away": 73.4,
+          "home_margin": 17.1,
+          "total": 164.0,
+          "home_prior_games": 35,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401929287",
@@ -857,7 +1245,15 @@
           "tipoff_ct": "6:30 PM CT",
           "venue": "Imperial Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.8,
+          "pred_away": 81.8,
+          "home_margin": -5.0,
+          "total": 158.7,
+          "home_prior_games": 32,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920138",
@@ -872,7 +1268,15 @@
           "tipoff_ct": "7:00 PM CT",
           "venue": "Firestone Fieldhouse",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 80.5,
+          "pred_away": 74.6,
+          "home_margin": 5.8,
+          "total": 155.1,
+          "home_prior_games": 32,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911522",
@@ -887,7 +1291,15 @@
           "tipoff_ct": "7:00 PM CT",
           "venue": "Resorts World Event Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.9,
+          "pred_away": 74.6,
+          "home_margin": 2.3,
+          "total": 151.4,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920550",
@@ -902,7 +1314,15 @@
           "tipoff_ct": "7:30 PM CT",
           "venue": "Hard Rock Hotel Riviera Maya",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 68.8,
+          "pred_away": 68.7,
+          "home_margin": 0.1,
+          "total": 137.5,
+          "home_prior_games": 31,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925880",
@@ -917,7 +1337,9 @@
           "tipoff_ct": "8:00 PM CT",
           "venue": "Worthington Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": false,
+          "reason": "Historical baseline unavailable: prior-season coverage required."
         },
         {
           "id": "401924897",
@@ -932,7 +1354,15 @@
           "tipoff_ct": "8:00 PM CT",
           "venue": "The Pit",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 89.8,
+          "pred_away": 59.0,
+          "home_margin": 30.8,
+          "total": 148.8,
+          "home_prior_games": 37,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917545",
@@ -947,7 +1377,15 @@
           "tipoff_ct": "8:00 PM CT",
           "venue": "Gersten Pavilion",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.0,
+          "pred_away": 73.8,
+          "home_margin": 4.2,
+          "total": 151.9,
+          "home_prior_games": 32,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921671",
@@ -962,7 +1400,15 @@
           "tipoff_ct": "8:30 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.4,
+          "pred_away": 77.5,
+          "home_margin": -3.1,
+          "total": 152.0,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921713",
@@ -977,7 +1423,15 @@
           "tipoff_ct": "9:00 PM CT",
           "venue": "Lahaina Civic Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.3,
+          "pred_away": 74.4,
+          "home_margin": 3.9,
+          "total": 152.8,
+          "home_prior_games": 36,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917544",
@@ -992,7 +1446,15 @@
           "tipoff_ct": "9:30 PM CT",
           "venue": "Resorts World Event Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 67.9,
+          "pred_away": 68.1,
+          "home_margin": -0.2,
+          "total": 136.0,
+          "home_prior_games": 32,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401929005",
@@ -1007,7 +1469,15 @@
           "tipoff_ct": "10:59 PM CT",
           "venue": "Stan Sheriff Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 79.0,
+          "pred_away": 69.9,
+          "home_margin": 9.2,
+          "total": 148.9,
+          "home_prior_games": 33,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921672",
@@ -1022,7 +1492,15 @@
           "tipoff_ct": "10:59 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.2,
+          "pred_away": 73.6,
+          "home_margin": 9.5,
+          "total": 156.8,
+          "home_prior_games": 35,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921714",
@@ -1037,7 +1515,15 @@
           "tipoff_ct": "11:30 PM CT",
           "venue": "Lahaina Civic Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 67.2,
+          "pred_away": 71.2,
+          "home_margin": -4.1,
+          "total": 138.4,
+          "home_prior_games": 34,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         }
       ]
     },
@@ -1057,7 +1543,15 @@
           "tipoff_ct": "10:00 AM CT",
           "venue": "State Farm Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 76.2,
+          "pred_away": 79.4,
+          "home_margin": -3.2,
+          "total": 155.6,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401912231",
@@ -1072,7 +1566,15 @@
           "tipoff_ct": "11:00 AM CT",
           "venue": "UTSA Convocation Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.1,
+          "pred_away": 75.4,
+          "home_margin": -0.3,
+          "total": 150.5,
+          "home_prior_games": 30,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401906807",
@@ -1087,7 +1589,15 @@
           "tipoff_ct": "11:00 AM CT",
           "venue": "Suncoast Credit Union Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 81.7,
+          "pred_away": 74.6,
+          "home_margin": 7.1,
+          "total": 156.3,
+          "home_prior_games": 39,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920528",
@@ -1102,7 +1612,15 @@
           "tipoff_ct": "12:00 PM CT",
           "venue": "Michelob ULTRA Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 68.3,
+          "pred_away": 78.5,
+          "home_margin": -10.2,
+          "total": 146.9,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401929282",
@@ -1117,7 +1635,15 @@
           "tipoff_ct": "12:30 PM CT",
           "venue": "State Farm Field House",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 77.1,
+          "pred_away": 71.0,
+          "home_margin": 6.1,
+          "total": 148.0,
+          "home_prior_games": 33,
+          "away_prior_games": 31,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921674",
@@ -1132,7 +1658,15 @@
           "tipoff_ct": "1:00 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.8,
+          "pred_away": 74.8,
+          "home_margin": 1.0,
+          "total": 150.6,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401906869",
@@ -1147,7 +1681,15 @@
           "tipoff_ct": "1:30 PM CT",
           "venue": "Jenny Craig Pavilion",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 79.7,
+          "pred_away": 73.2,
+          "home_margin": 6.5,
+          "total": 152.9,
+          "home_prior_games": 36,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920529",
@@ -1162,7 +1704,15 @@
           "tipoff_ct": "2:30 PM CT",
           "venue": "Michelob ULTRA Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 73.5,
+          "pred_away": 69.5,
+          "home_margin": 4.0,
+          "total": 143.0,
+          "home_prior_games": 37,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920537",
@@ -1177,7 +1727,15 @@
           "tipoff_ct": "2:30 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.5,
+          "pred_away": 73.3,
+          "home_margin": 10.2,
+          "total": 156.8,
+          "home_prior_games": 40,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401925757",
@@ -1192,7 +1750,15 @@
           "tipoff_ct": "3:30 PM CT",
           "venue": "Little Caesars Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 81.0,
+          "pred_away": 80.5,
+          "home_margin": 0.5,
+          "total": 161.5,
+          "home_prior_games": 35,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401921673",
@@ -1207,7 +1773,15 @@
           "tipoff_ct": "3:30 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 74.8,
+          "pred_away": 83.5,
+          "home_margin": -8.7,
+          "total": 158.2,
+          "home_prior_games": 32,
+          "away_prior_games": 36,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917547",
@@ -1222,7 +1796,15 @@
           "tipoff_ct": "4:00 PM CT",
           "venue": "Jenny Craig Pavilion",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 68.8,
+          "pred_away": 72.6,
+          "home_margin": -3.8,
+          "total": 141.4,
+          "home_prior_games": 36,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920538",
@@ -1237,7 +1819,15 @@
           "tipoff_ct": "5:00 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 72.3,
+          "pred_away": 76.8,
+          "home_margin": -4.5,
+          "total": 149.0,
+          "home_prior_games": 34,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401918972",
@@ -1252,7 +1842,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Acrisure Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 79.8,
+          "pred_away": 83.1,
+          "home_margin": -3.3,
+          "total": 162.8,
+          "home_prior_games": 32,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401909506",
@@ -1267,7 +1865,15 @@
           "tipoff_ct": "6:00 PM CT",
           "venue": "Suncoast Credit Union Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 67.7,
+          "pred_away": 67.3,
+          "home_margin": 0.4,
+          "total": 135.0,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401911523",
@@ -1282,7 +1888,15 @@
           "tipoff_ct": "7:00 PM CT",
           "venue": "Resorts World Event Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 71.1,
+          "pred_away": 73.0,
+          "home_margin": -1.9,
+          "total": 144.1,
+          "home_prior_games": 33,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920530",
@@ -1297,7 +1911,15 @@
           "tipoff_ct": "8:00 PM CT",
           "venue": "Michelob ULTRA Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 78.2,
+          "pred_away": 77.4,
+          "home_margin": 0.8,
+          "total": 155.6,
+          "home_prior_games": 35,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920539",
@@ -1312,7 +1934,15 @@
           "tipoff_ct": "8:00 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 93.6,
+          "pred_away": 82.3,
+          "home_margin": 11.3,
+          "total": 175.8,
+          "home_prior_games": 35,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401917546",
@@ -1327,7 +1957,15 @@
           "tipoff_ct": "9:30 PM CT",
           "venue": "Resorts World Event Center",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 69.5,
+          "pred_away": 73.9,
+          "home_margin": -4.4,
+          "total": 143.3,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920531",
@@ -1342,7 +1980,15 @@
           "tipoff_ct": "10:30 PM CT",
           "venue": "Michelob ULTRA Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 68.0,
+          "pred_away": 78.4,
+          "home_margin": -10.4,
+          "total": 146.4,
+          "home_prior_games": 32,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline"
         },
         {
           "id": "401920540",
@@ -1357,7 +2003,15 @@
           "tipoff_ct": "10:30 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
-          "inactive": false
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 73.1,
+          "pred_away": 82.1,
+          "home_margin": -9.0,
+          "total": 155.3,
+          "home_prior_games": 34,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline"
         }
       ]
     }
