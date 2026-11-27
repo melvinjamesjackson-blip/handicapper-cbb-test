@@ -1,100 +1,132 @@
 {
-  "updated_at": "2026-11-26T16:18:10.445474-06:00",
+  "updated_at": "2026-11-26T22:33:07.779798-06:00",
   "slates": {
     "2026-11-26": {
       "day": "2026-11-26",
       "games": [
         {
-          "id": "401920529",
+          "id": "401920530",
           "date": "2026-11-26",
-          "tipoff_et": "03:30 PM ET",
-          "home_id": "66",
-          "away_id": "2633",
-          "home": "Iowa State Cyclones",
-          "away": "Tennessee Volunteers",
+          "tipoff_et": "09:00 PM ET",
+          "home_id": "2599",
+          "away_id": "97",
+          "home": "St. John's Red Storm",
+          "away": "Louisville Cardinals",
           "neutral": true,
-          "completed": false,
-          "tipoff_ct": "2:30 PM CT",
+          "completed": true,
+          "home_score": 90,
+          "away_score": 93,
+          "tipoff_ct": "8:00 PM CT",
           "venue": "Michelob ULTRA Arena",
-          "schedule_status": "In Progress",
+          "schedule_status": "Final",
           "inactive": false,
           "projection_available": true,
-          "pred_home": 73.5,
-          "pred_away": 69.5,
-          "home_margin": 4.0,
-          "total": 143.0,
+          "pred_home": 77.4,
+          "pred_away": 78.2,
+          "home_margin": -0.8,
+          "total": 155.6,
           "home_prior_games": 37,
-          "away_prior_games": 37,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401925757",
-          "date": "2026-11-26",
-          "tipoff_et": "04:30 PM ET",
-          "home_id": "127",
-          "away_id": "8",
-          "home": "Michigan State Spartans",
-          "away": "Arkansas Razorbacks",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "3:30 PM CT",
-          "venue": "Little Caesars Arena",
-          "schedule_status": "In Progress",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 81.0,
-          "pred_away": 80.5,
-          "home_margin": 0.5,
-          "total": 161.5,
-          "home_prior_games": 35,
-          "away_prior_games": 37,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401920537",
-          "date": "2026-11-26",
-          "tipoff_et": "03:30 PM ET",
-          "home_id": "130",
-          "away_id": "2390",
-          "home": "Michigan Wolverines",
-          "away": "Miami Hurricanes",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "2:30 PM CT",
-          "venue": "T-Mobile Arena",
-          "schedule_status": "In Progress",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 83.5,
-          "pred_away": 73.3,
-          "home_margin": 10.2,
-          "total": 156.8,
-          "home_prior_games": 40,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.8,
+            "pred_home": 80.2,
+            "pred_away": 76.4,
+            "home_current_games": 6,
+            "away_current_games": 5,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
-          "id": "401921673",
+          "id": "401917546",
           "date": "2026-11-26",
-          "tipoff_et": "04:30 PM ET",
-          "home_id": "328",
-          "away_id": "30",
-          "home": "Utah State Aggies",
-          "away": "USC Trojans",
+          "tipoff_et": "10:30 PM ET",
+          "home_id": "2437",
+          "away_id": "279",
+          "home": "Omaha Mavericks",
+          "away": "Pacific Tigers",
           "neutral": true,
           "completed": false,
-          "tipoff_ct": "3:30 PM CT",
-          "venue": "Acrisure Arena",
+          "tipoff_ct": "9:30 PM CT",
+          "venue": "Resorts World Event Center",
           "schedule_status": "In Progress",
           "inactive": false,
           "projection_available": true,
-          "pred_home": 83.5,
-          "pred_away": 74.8,
-          "home_margin": 8.7,
-          "total": 158.2,
-          "home_prior_games": 36,
-          "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "pred_home": 69.5,
+          "pred_away": 73.9,
+          "home_margin": -4.4,
+          "total": 143.3,
+          "home_prior_games": 33,
+          "away_prior_games": 33,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -8.6,
+            "pred_home": 68.0,
+            "pred_away": 76.6,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401917547",
+          "date": "2026-11-26",
+          "tipoff_et": "05:00 PM ET",
+          "home_id": "2608",
+          "away_id": "26",
+          "home": "Saint Mary's Gaels",
+          "away": "UCLA Bruins",
+          "neutral": true,
+          "completed": true,
+          "home_score": 85,
+          "away_score": 70,
+          "tipoff_ct": "4:00 PM CT",
+          "venue": "Jenny Craig Pavilion",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 72.6,
+          "pred_away": 68.8,
+          "home_margin": 3.8,
+          "total": 141.4,
+          "home_prior_games": 33,
+          "away_prior_games": 36,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -2.9,
+            "pred_home": 76.9,
+            "pred_away": 79.8,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401906869",
@@ -119,7 +151,276 @@
           "total": 152.9,
           "home_prior_games": 36,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 6.4,
+            "pred_home": 80.0,
+            "pred_away": 73.6,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401920529",
+          "date": "2026-11-26",
+          "tipoff_et": "03:30 PM ET",
+          "home_id": "66",
+          "away_id": "2633",
+          "home": "Iowa State Cyclones",
+          "away": "Tennessee Volunteers",
+          "neutral": true,
+          "completed": true,
+          "home_score": 64,
+          "away_score": 75,
+          "tipoff_ct": "2:30 PM CT",
+          "venue": "Michelob ULTRA Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 73.5,
+          "pred_away": 69.5,
+          "home_margin": 4.0,
+          "total": 143.0,
+          "home_prior_games": 37,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 0.5,
+            "pred_home": 69.4,
+            "pred_away": 68.9,
+            "home_current_games": 5,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401925757",
+          "date": "2026-11-26",
+          "tipoff_et": "04:30 PM ET",
+          "home_id": "127",
+          "away_id": "8",
+          "home": "Michigan State Spartans",
+          "away": "Arkansas Razorbacks",
+          "neutral": true,
+          "completed": true,
+          "home_score": 70,
+          "away_score": 67,
+          "tipoff_ct": "3:30 PM CT",
+          "venue": "Little Caesars Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 81.0,
+          "pred_away": 80.5,
+          "home_margin": 0.5,
+          "total": 161.5,
+          "home_prior_games": 35,
+          "away_prior_games": 37,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.4,
+            "pred_home": 77.4,
+            "pred_away": 76.0,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401920539",
+          "date": "2026-11-26",
+          "tipoff_et": "09:00 PM ET",
+          "home_id": "2306",
+          "away_id": "333",
+          "home": "Kansas State Wildcats",
+          "away": "Alabama Crimson Tide",
+          "neutral": true,
+          "completed": true,
+          "home_score": 91,
+          "away_score": 104,
+          "tipoff_ct": "8:00 PM CT",
+          "venue": "T-Mobile Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 82.3,
+          "pred_away": 93.6,
+          "home_margin": -11.3,
+          "total": 175.8,
+          "home_prior_games": 32,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -7.3,
+            "pred_home": 78.1,
+            "pred_away": 85.4,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401920537",
+          "date": "2026-11-26",
+          "tipoff_et": "03:30 PM ET",
+          "home_id": "130",
+          "away_id": "2390",
+          "home": "Michigan Wolverines",
+          "away": "Miami Hurricanes",
+          "neutral": true,
+          "completed": true,
+          "home_score": 70,
+          "away_score": 97,
+          "tipoff_ct": "2:30 PM CT",
+          "venue": "T-Mobile Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.5,
+          "pred_away": 73.3,
+          "home_margin": 10.2,
+          "total": 156.8,
+          "home_prior_games": 40,
+          "away_prior_games": 35,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -3.4,
+            "pred_home": 76.5,
+            "pred_away": 79.9,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401921673",
+          "date": "2026-11-26",
+          "tipoff_et": "04:30 PM ET",
+          "home_id": "328",
+          "away_id": "30",
+          "home": "Utah State Aggies",
+          "away": "USC Trojans",
+          "neutral": true,
+          "completed": true,
+          "home_score": 78,
+          "away_score": 74,
+          "tipoff_ct": "3:30 PM CT",
+          "venue": "Acrisure Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.5,
+          "pred_away": 74.8,
+          "home_margin": 8.7,
+          "total": 158.2,
+          "home_prior_games": 36,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 2.2,
+            "pred_home": 80.7,
+            "pred_away": 78.6,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401918972",
+          "date": "2026-11-26",
+          "tipoff_et": "07:00 PM ET",
+          "home_id": "2567",
+          "away_id": "99",
+          "home": "SMU Mustangs",
+          "away": "LSU Tigers",
+          "neutral": true,
+          "completed": true,
+          "home_score": 86,
+          "away_score": 95,
+          "tipoff_ct": "6:00 PM CT",
+          "venue": "Acrisure Arena",
+          "schedule_status": "Final",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 83.1,
+          "pred_away": 79.8,
+          "home_margin": 3.3,
+          "total": 162.8,
+          "home_prior_games": 34,
+          "away_prior_games": 32,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -1.7,
+            "pred_home": 77.9,
+            "pred_away": 79.7,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929281",
@@ -144,7 +445,24 @@
           "total": 155.6,
           "home_prior_games": 33,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -0.3,
+            "pred_home": 75.9,
+            "pred_away": 76.2,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401912231",
@@ -169,7 +487,24 @@
           "total": 150.5,
           "home_prior_games": 30,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.3,
+            "pred_home": 76.1,
+            "pred_away": 72.8,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401906807",
@@ -194,7 +529,24 @@
           "total": 156.3,
           "home_prior_games": 39,
           "away_prior_games": 37,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 4.1,
+            "pred_home": 76.4,
+            "pred_away": 72.3,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920528",
@@ -219,7 +571,24 @@
           "total": 146.9,
           "home_prior_games": 33,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 2.8,
+            "pred_home": 77.0,
+            "pred_away": 74.2,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929282",
@@ -244,7 +613,24 @@
           "total": 148.0,
           "home_prior_games": 33,
           "away_prior_games": 31,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -1.3,
+            "pred_home": 74.4,
+            "pred_away": 75.7,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921674",
@@ -269,30 +655,24 @@
           "total": 150.6,
           "home_prior_games": 32,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401917547",
-          "date": "2026-11-26",
-          "tipoff_et": "05:00 PM ET",
-          "home_id": "26",
-          "away_id": "2608",
-          "home": "UCLA Bruins",
-          "away": "Saint Mary's Gaels",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "4:00 PM CT",
-          "venue": "Jenny Craig Pavilion",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 68.8,
-          "pred_away": 72.6,
-          "home_margin": -3.8,
-          "total": 141.4,
-          "home_prior_games": 36,
-          "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -0.3,
+            "pred_home": 74.2,
+            "pred_away": 74.5,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920538",
@@ -303,10 +683,12 @@
           "home": "Creighton Bluejays",
           "away": "TCU Horned Frogs",
           "neutral": true,
-          "completed": false,
+          "completed": true,
+          "home_score": 95,
+          "away_score": 87,
           "tipoff_ct": "5:00 PM CT",
           "venue": "T-Mobile Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "Final",
           "inactive": false,
           "projection_available": true,
           "pred_home": 72.3,
@@ -315,30 +697,24 @@
           "total": 149.0,
           "home_prior_games": 34,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401918972",
-          "date": "2026-11-26",
-          "tipoff_et": "07:00 PM ET",
-          "home_id": "99",
-          "away_id": "2567",
-          "home": "LSU Tigers",
-          "away": "SMU Mustangs",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "6:00 PM CT",
-          "venue": "Acrisure Arena",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 79.8,
-          "pred_away": 83.1,
-          "home_margin": -3.3,
-          "total": 162.8,
-          "home_prior_games": 32,
-          "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -2.8,
+            "pred_home": 75.9,
+            "pred_away": 78.7,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401909506",
@@ -349,10 +725,12 @@
           "home": "Pittsburgh Panthers",
           "away": "DePaul Blue Demons",
           "neutral": true,
-          "completed": false,
+          "completed": true,
+          "home_score": 71,
+          "away_score": 64,
           "tipoff_ct": "6:00 PM CT",
           "venue": "Suncoast Credit Union Arena",
-          "schedule_status": "Scheduled",
+          "schedule_status": "Final",
           "inactive": false,
           "projection_available": true,
           "pred_home": 67.7,
@@ -361,99 +739,66 @@
           "total": 135.0,
           "home_prior_games": 33,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -0.0,
+            "pred_home": 71.0,
+            "pred_away": 71.0,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401911523",
           "date": "2026-11-26",
           "tipoff_et": "08:00 PM ET",
-          "home_id": "302",
-          "away_id": "55",
-          "home": "UC Davis Aggies",
-          "away": "Jacksonville State Gamecocks",
+          "home_id": "55",
+          "away_id": "302",
+          "home": "Jacksonville State Gamecocks",
+          "away": "UC Davis Aggies",
           "neutral": true,
-          "completed": false,
+          "completed": true,
+          "home_score": 63,
+          "away_score": 68,
           "tipoff_ct": "7:00 PM CT",
           "venue": "Resorts World Event Center",
-          "schedule_status": "Scheduled",
+          "schedule_status": "Final",
           "inactive": false,
           "projection_available": true,
-          "pred_home": 71.1,
-          "pred_away": 73.0,
-          "home_margin": -1.9,
+          "pred_home": 73.0,
+          "pred_away": 71.1,
+          "home_margin": 1.9,
           "total": 144.1,
-          "home_prior_games": 33,
-          "away_prior_games": 32,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401920530",
-          "date": "2026-11-26",
-          "tipoff_et": "09:00 PM ET",
-          "home_id": "2599",
-          "away_id": "97",
-          "home": "St. John's Red Storm",
-          "away": "Louisville Cardinals",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "8:00 PM CT",
-          "venue": "Michelob ULTRA Arena",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 77.4,
-          "pred_away": 78.2,
-          "home_margin": -0.8,
-          "total": 155.6,
-          "home_prior_games": 37,
-          "away_prior_games": 35,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401920539",
-          "date": "2026-11-26",
-          "tipoff_et": "09:00 PM ET",
-          "home_id": "2306",
-          "away_id": "333",
-          "home": "Kansas State Wildcats",
-          "away": "Alabama Crimson Tide",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "8:00 PM CT",
-          "venue": "T-Mobile Arena",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 82.3,
-          "pred_away": 93.6,
-          "home_margin": -11.3,
-          "total": 175.8,
           "home_prior_games": 32,
-          "away_prior_games": 35,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401917546",
-          "date": "2026-11-26",
-          "tipoff_et": "10:30 PM ET",
-          "home_id": "2437",
-          "away_id": "279",
-          "home": "Omaha Mavericks",
-          "away": "Pacific Tigers",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "9:30 PM CT",
-          "venue": "Resorts World Event Center",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": true,
-          "pred_home": 69.5,
-          "pred_away": 73.9,
-          "home_margin": -4.4,
-          "total": 143.3,
-          "home_prior_games": 33,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.8,
+            "pred_home": 75.0,
+            "pred_away": 73.2,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920531",
@@ -476,19 +821,36 @@
           "total": 146.4,
           "home_prior_games": 32,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -6.8,
+            "pred_home": 69.6,
+            "pred_away": 76.4,
+            "home_current_games": 5,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920540",
           "date": "2026-11-26",
-          "tipoff_et": "11:30 PM ET",
+          "tipoff_et": "11:48 PM ET",
           "home_id": "2250",
           "away_id": "239",
           "home": "Gonzaga Bulldogs",
           "away": "Baylor Bears",
           "neutral": true,
           "completed": false,
-          "tipoff_ct": "10:30 PM CT",
+          "tipoff_ct": "10:48 PM CT",
           "venue": "T-Mobile Arena",
           "schedule_status": "Scheduled",
           "inactive": false,
@@ -499,7 +861,24 @@
           "total": 155.3,
           "home_prior_games": 35,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.2,
+            "pred_home": 77.4,
+            "pred_away": 76.2,
+            "home_current_games": 5,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         }
       ]
     },
@@ -527,7 +906,24 @@
           "total": 157.2,
           "home_prior_games": 33,
           "away_prior_games": 36,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -4.8,
+            "pred_home": 74.4,
+            "pred_away": 79.2,
+            "home_current_games": 7,
+            "away_current_games": 8,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920848",
@@ -550,7 +946,24 @@
           "total": 151.1,
           "home_prior_games": 34,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.4,
+            "pred_home": 78.4,
+            "pred_away": 77.0,
+            "home_current_games": 9,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401924810",
@@ -573,7 +986,24 @@
           "total": 136.8,
           "home_prior_games": 34,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -4.0,
+            "pred_home": 69.4,
+            "pred_away": 73.4,
+            "home_current_games": 5,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921416",
@@ -596,7 +1026,24 @@
           "total": 147.6,
           "home_prior_games": 33,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 4.0,
+            "pred_home": 72.8,
+            "pred_away": 68.8,
+            "home_current_games": 6,
+            "away_current_games": 5,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920753",
@@ -613,7 +1060,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920533",
@@ -630,7 +1086,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929288",
@@ -653,7 +1118,24 @@
           "total": 154.6,
           "home_prior_games": 32,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -2.8,
+            "pred_home": 76.0,
+            "pred_away": 78.8,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921827",
@@ -676,7 +1158,24 @@
           "total": 162.1,
           "home_prior_games": 36,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 19.8,
+            "pred_home": 86.6,
+            "pred_away": 66.8,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929407",
@@ -693,7 +1192,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929181",
@@ -716,7 +1224,24 @@
           "total": 141.9,
           "home_prior_games": 32,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -1.8,
+            "pred_home": 75.6,
+            "pred_away": 77.5,
+            "home_current_games": 6,
+            "away_current_games": 9,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921224",
@@ -739,7 +1264,24 @@
           "total": 142.1,
           "home_prior_games": 34,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -0.5,
+            "pred_home": 70.0,
+            "pred_away": 70.5,
+            "home_current_games": 6,
+            "away_current_games": 8,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401919786",
@@ -762,24 +1304,64 @@
           "total": 136.6,
           "home_prior_games": 32,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.8,
+            "pred_home": 72.2,
+            "pred_away": 68.4,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921717",
           "date": "2026-11-27",
           "tipoff_et": "02:30 PM ET",
-          "home_id": "-1",
-          "away_id": "-2",
-          "home": "TBD",
-          "away": "TBD",
+          "home_id": "26",
+          "away_id": "46",
+          "home": "UCLA Bruins",
+          "away": "Georgetown Hoyas",
           "neutral": true,
           "completed": false,
           "tipoff_ct": "1:30 PM CT",
           "venue": "Jenny Craig Pavilion",
           "schedule_status": "Scheduled",
           "inactive": false,
-          "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "projection_available": true,
+          "pred_home": 76.0,
+          "pred_away": 70.3,
+          "home_margin": 5.7,
+          "total": 146.2,
+          "home_prior_games": 36,
+          "away_prior_games": 34,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 6.7,
+            "pred_home": 79.0,
+            "pred_away": 72.3,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401928468",
@@ -802,7 +1384,24 @@
           "total": 133.6,
           "home_prior_games": 34,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -2.6,
+            "pred_home": 69.3,
+            "pred_away": 71.9,
+            "home_current_games": 7,
+            "away_current_games": 8,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401924738",
@@ -825,16 +1424,33 @@
           "total": 138.1,
           "home_prior_games": 34,
           "away_prior_games": 29,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 8.4,
+            "pred_home": 79.3,
+            "pred_away": 70.9,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920542",
           "date": "2026-11-27",
           "tipoff_et": "03:00 PM ET",
           "home_id": "-1",
-          "away_id": "-2",
+          "away_id": "2628",
           "home": "TBD",
-          "away": "TBD",
+          "away": "TCU Horned Frogs",
           "neutral": true,
           "completed": false,
           "tipoff_ct": "2:00 PM CT",
@@ -842,7 +1458,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401919021",
@@ -859,7 +1484,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401902282",
@@ -882,7 +1516,24 @@
           "total": 162.5,
           "home_prior_games": 32,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 9.0,
+            "pred_home": 80.8,
+            "pred_away": 71.8,
+            "home_current_games": 7,
+            "away_current_games": 9,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921417",
@@ -905,7 +1556,24 @@
           "total": 140.3,
           "home_prior_games": 33,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -5.4,
+            "pred_home": 71.2,
+            "pred_away": 76.6,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920774",
@@ -928,7 +1596,24 @@
           "total": 146.7,
           "home_prior_games": 35,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.3,
+            "pred_home": 74.6,
+            "pred_away": 71.2,
+            "home_current_games": 5,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920532",
@@ -945,7 +1630,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921818",
@@ -968,7 +1662,24 @@
           "total": 156.4,
           "home_prior_games": 33,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 29.3,
+            "pred_home": 91.6,
+            "pred_away": 62.3,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401912213",
@@ -991,7 +1702,24 @@
           "total": 155.1,
           "home_prior_games": 32,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.3,
+            "pred_home": 75.5,
+            "pred_away": 72.3,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401911212",
@@ -1014,7 +1742,24 @@
           "total": 152.6,
           "home_prior_games": 35,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 12.8,
+            "pred_home": 80.9,
+            "pred_away": 68.0,
+            "home_current_games": 7,
+            "away_current_games": 9,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929283",
@@ -1037,7 +1782,24 @@
           "total": 133.0,
           "home_prior_games": 31,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -3.3,
+            "pred_home": 68.7,
+            "pred_away": 72.0,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401924845",
@@ -1060,7 +1822,64 @@
           "total": 136.5,
           "home_prior_games": 32,
           "away_prior_games": 30,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 9.3,
+            "pred_home": 78.0,
+            "pred_away": 68.7,
+            "home_current_games": 7,
+            "away_current_games": 5,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
+        },
+        {
+          "id": "401921718",
+          "date": "2026-11-27",
+          "tipoff_et": "05:00 PM ET",
+          "home_id": "2608",
+          "away_id": "251",
+          "home": "Saint Mary's Gaels",
+          "away": "Texas Longhorns",
+          "neutral": true,
+          "completed": false,
+          "tipoff_ct": "4:00 PM CT",
+          "venue": "Jenny Craig Pavilion",
+          "schedule_status": "Scheduled",
+          "inactive": false,
+          "projection_available": true,
+          "pred_home": 75.6,
+          "pred_away": 72.6,
+          "home_margin": 3.0,
+          "total": 148.1,
+          "home_prior_games": 33,
+          "away_prior_games": 36,
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -2.6,
+            "pred_home": 78.1,
+            "pred_away": 80.8,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401909789",
@@ -1083,24 +1902,24 @@
           "total": 143.7,
           "home_prior_games": 35,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
-        },
-        {
-          "id": "401921718",
-          "date": "2026-11-27",
-          "tipoff_et": "05:00 PM ET",
-          "home_id": "-1",
-          "away_id": "-2",
-          "home": "TBD",
-          "away": "TBD",
-          "neutral": true,
-          "completed": false,
-          "tipoff_ct": "4:00 PM CT",
-          "venue": "Jenny Craig Pavilion",
-          "schedule_status": "Scheduled",
-          "inactive": false,
-          "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 7.2,
+            "pred_home": 79.3,
+            "pred_away": 72.1,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920810",
@@ -1123,7 +1942,24 @@
           "total": 160.3,
           "home_prior_games": 34,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 2.8,
+            "pred_home": 78.6,
+            "pred_away": 75.8,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920382",
@@ -1146,7 +1982,24 @@
           "total": 155.1,
           "home_prior_games": 32,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 5.4,
+            "pred_home": 78.5,
+            "pred_away": 73.0,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401927366",
@@ -1169,16 +2022,33 @@
           "total": 152.1,
           "home_prior_games": 32,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.9,
+            "pred_home": 79.3,
+            "pred_away": 77.5,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920541",
           "date": "2026-11-27",
           "tipoff_et": "05:30 PM ET",
           "home_id": "-1",
-          "away_id": "-2",
+          "away_id": "130",
           "home": "TBD",
-          "away": "TBD",
+          "away": "Michigan Wolverines",
           "neutral": true,
           "completed": false,
           "tipoff_ct": "4:30 PM CT",
@@ -1186,7 +2056,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401913531",
@@ -1209,7 +2088,24 @@
           "total": 155.6,
           "home_prior_games": 37,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 13.6,
+            "pred_home": 87.3,
+            "pred_away": 73.7,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401911030",
@@ -1232,7 +2128,24 @@
           "total": 151.2,
           "home_prior_games": 32,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 8.0,
+            "pred_home": 81.4,
+            "pred_away": 73.4,
+            "home_current_games": 7,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401933055",
@@ -1249,7 +2162,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401921185",
@@ -1272,7 +2194,24 @@
           "total": 140.3,
           "home_prior_games": 30,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 3.6,
+            "pred_home": 74.1,
+            "pred_away": 70.5,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929284",
@@ -1295,7 +2234,24 @@
           "total": 170.6,
           "home_prior_games": 33,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 4.9,
+            "pred_home": 83.2,
+            "pred_away": 78.3,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401926756",
@@ -1318,7 +2274,24 @@
           "total": 148.1,
           "home_prior_games": 32,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 6.6,
+            "pred_home": 76.8,
+            "pred_away": 70.2,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401918980",
@@ -1335,7 +2308,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401912711",
@@ -1358,7 +2340,24 @@
           "total": 139.2,
           "home_prior_games": 33,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 2.0,
+            "pred_home": 74.3,
+            "pred_away": 72.4,
+            "home_current_games": 6,
+            "away_current_games": 6,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401911380",
@@ -1381,7 +2380,24 @@
           "total": 156.7,
           "home_prior_games": 34,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 6.5,
+            "pred_home": 76.4,
+            "pred_away": 69.9,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401925703",
@@ -1404,7 +2420,24 @@
           "total": 149.8,
           "home_prior_games": 37,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 21.5,
+            "pred_home": 86.9,
+            "pred_away": 65.4,
+            "home_current_games": 6,
+            "away_current_games": 8,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929289",
@@ -1427,7 +2460,24 @@
           "total": 157.8,
           "home_prior_games": 32,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.4,
+            "pred_home": 77.8,
+            "pred_away": 76.5,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401929381",
@@ -1444,7 +2494,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401928624",
@@ -1467,7 +2526,24 @@
           "total": 147.9,
           "home_prior_games": 33,
           "away_prior_games": 34,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.6,
+            "pred_home": 73.5,
+            "pred_away": 72.0,
+            "home_current_games": 7,
+            "away_current_games": 5,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401925829",
@@ -1490,7 +2566,24 @@
           "total": 140.0,
           "home_prior_games": 33,
           "away_prior_games": 35,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 2.6,
+            "pred_home": 74.7,
+            "pred_away": 72.1,
+            "home_current_games": 5,
+            "away_current_games": 8,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401922264",
@@ -1513,7 +2606,24 @@
           "total": 152.2,
           "home_prior_games": 32,
           "away_prior_games": 36,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 1.2,
+            "pred_home": 78.5,
+            "pred_away": 77.2,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920737",
@@ -1536,7 +2646,24 @@
           "total": 152.6,
           "home_prior_games": 34,
           "away_prior_games": 31,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": 9.3,
+            "pred_home": 80.0,
+            "pred_away": 70.7,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401911524",
@@ -1559,7 +2686,24 @@
           "total": 143.9,
           "home_prior_games": 33,
           "away_prior_games": 33,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -4.8,
+            "pred_home": 68.9,
+            "pred_away": 73.7,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920543",
@@ -1576,7 +2720,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920534",
@@ -1593,7 +2746,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401919033",
@@ -1616,7 +2778,24 @@
           "total": 149.8,
           "home_prior_games": 36,
           "away_prior_games": 36,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -0.8,
+            "pred_home": 76.4,
+            "pred_away": 77.2,
+            "home_current_games": 6,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 3
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401926783",
@@ -1639,16 +2818,33 @@
           "total": 143.5,
           "home_prior_games": 33,
           "away_prior_games": 32,
-          "projection_source": "Historical baseline"
+          "projection_source": "Historical baseline",
+          "comparison": {
+            "home_margin": -5.6,
+            "pred_home": 72.2,
+            "pred_away": 77.9,
+            "home_current_games": 7,
+            "away_current_games": 7,
+            "current_data_through": "2026-11-25",
+            "venue_margin": 0
+          },
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920544",
           "date": "2026-11-27",
           "tipoff_et": "11:00 PM ET",
           "home_id": "-1",
-          "away_id": "-2",
+          "away_id": "156",
           "home": "TBD",
-          "away": "TBD",
+          "away": "Creighton Bluejays",
           "neutral": true,
           "completed": false,
           "tipoff_ct": "10:00 PM CT",
@@ -1656,7 +2852,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         },
         {
           "id": "401920535",
@@ -1673,7 +2878,16 @@
           "schedule_status": "Scheduled",
           "inactive": false,
           "projection_available": false,
-          "reason": "Historical baseline unavailable: prior-season coverage required."
+          "reason": "Historical baseline unavailable: prior-season coverage required.",
+          "comparison_reason": "Insufficient current-season rating data",
+          "home_ats": {
+            "season": null,
+            "last_five": null
+          },
+          "away_ats": {
+            "season": null,
+            "last_five": null
+          }
         }
       ]
     }
